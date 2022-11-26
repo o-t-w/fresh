@@ -1,0 +1,50 @@
+[
+    {
+        "title": "UX Considerations for Web Sharing",
+        "url": "https://css-tricks.com/ux-considerations-for-web-sharing/"
+    },
+    {
+        "title": "Using the new data feature in Sketch 52",
+        "url": "https://medium.com/sketch-app-sources/using-the-new-data-feature-in-sketch-52-daee8403cabb"
+    },
+    {
+        "title": "Front-End Documentation, Style Guides and the Rise of MDX",
+        "url": "https://css-tricks.com/front-end-documentation-style-guides-and-the-rise-of-mdx/"
+    },
+    {
+        "title": "One File, Many Options: Using Variable Fonts on the Web",
+        "url": "https://css-tricks.com/one-file-many-options-using-variable-fonts-web/"
+    },
+    {
+        "title": "Finger-friendly numerical inputs with `inputmode`",
+        "url": "https://css-tricks.com/finger-friendly-numerical-inputs-with-inputmode/"
+    },
+    {
+        "title": "Using Performant Next-gen Images in CSS with image-set",
+        "url": "https://css-tricks.com/using-performant-next-gen-images-in-css-with-image-set/"
+    },
+    {
+        "title": "CSS Logical Properties and Values",
+        "url": "https://css-tricks.com/css-logical-properties-and-values/"
+    },
+    {
+        "title": "The Expanding Gamut of Color on the Web",
+        "url": "https://css-tricks.com/the-expanding-gamut-of-color-on-the-web/"
+    }, 
+    {
+        "title": "Styling Links with Real Underlines",
+        "url": "https://css-tricks.com/styling-links-with-real-underlines/"
+    },
+    {
+        "title": "It All Started With Emoji: Color Typography on the Web",
+        "url": "https://css-tricks.com/it-all-started-with-emoji-color-typography-on-the-web/"
+    },
+    {
+        "title": "CSS Animations vs Web Animations API",
+        "url": "https://css-tricks.com/css-animations-vs-web-animations-api/"
+    },
+    {
+        "title": "Slanted CSS for a more intriguing looking page",
+        "url": "https://codepen.io/cssgrid/post/slanted-css-3-methods-for-a-more-interesting-look"
+    }
+]

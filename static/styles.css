@@ -1,0 +1,297 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    color: rgb(35,35,35);
+    font-family: system-ui;
+}
+
+@font-face {
+    font-family: 'Nabla';
+    src: url('Nabla-Variable.ttf') format("truetype-variations");
+  }
+
+  .redacted {
+    font-family: 'Redacted Script', cursive;
+  }
+
+.comic {
+    font-family: "Comic Sans MS", "Comic Sans";
+}
+
+.hand-written {
+    font-family: 'Covered By Your Grace', cursive;
+}
+
+.figjam {
+    background-image: url(ellipsis2.svg);
+    background-size: 24px;
+    background-attachment: fixed;
+}
+
+.visible-grid {
+    display: grid;
+    grid-template-columns: 1fr 24px 1fr 24px 1fr 24px 1fr 24px 1fr 24px 1fr;
+    /* gap: 24px; */
+    max-width: 1200px;
+    margin-inline: auto;
+    position: relative;
+}
+
+.visible-grid:before {
+    content: "";
+    height: 200px;
+    width: 100%;
+    background-image: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,1));
+    position: absolute;
+    bottom: 0;
+}
+
+.visible-grid:after {
+    content: "";
+    height: 200px;
+    width: 100%;
+    background-image: linear-gradient(rgba(255,255,255,1), rgba(255,255,255,0));
+    position: absolute;
+    top: 0;
+}
+
+.item {
+    border-left: 1px solid rgba(235,235,235,1);
+    border-right: 1px solid rgba(235,235,235,1);
+}
+
+.show-gap {
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 20%;
+}
+
+.push-down {
+    position: relative;
+    top: calc(20% + 36px);
+}
+
+img {
+    max-width: 100%;
+}
+
+/* .show-gap {position: relative;}
+.show-gap:before {
+    content: url(top.png);
+    display: block;
+    width: 24px;
+    height: auto;
+    left: -24px;
+    position: absolute;
+    z-index: 3;
+} */
+
+.postit {
+    width: 240px;
+    aspect-ratio: 1 / 1;
+    rotate: -3deg;
+    background-color: #FFD966;
+    font-size: 28px;
+    padding: 24px;
+    box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.16);
+}
+
+@font-palette-values --Purple {
+    font-family: Nabla;
+    base-palette: 1;
+    override-colors: 
+    0 #5651FF,
+    1 #4B46D9;
+    @supports(lch(57% 132 329)) {
+        override-colors: 
+        0 lch(44.278% 132 296.455),
+        1 lch(57% 132 329);
+    }
+  }
+  
+  .nabla {
+    font-family: 'Nabla', cursive;
+    font-size: 70px;
+    font-palette: --Purple;
+    font-variation-settings: "EDPT" 0;
+    animation: font3d 1.2s forwards ease-out;
+    animation: font3d 1s forwards cubic-bezier(0, 0, 0.98, 1.3);
+}
+
+@keyframes font3d {
+    0% {
+        font-variation-settings: "EDPT" 0, "EHLT" 12;
+    }
+    50% {
+        font-variation-settings: "EDPT" 200, "EHLT" 24;
+    }
+    100% {
+        font-variation-settings: "EDPT" 100, "EHLT" 12;
+    }
+}
+
+.opening {
+    display: grid;
+    align-content: center;
+    grid-template-rows: min-content min-content;
+    place-items: center;
+    padding: 24px;
+}
+
+.vh {
+    height: 100vh;
+}
+
+.design-systems {
+    grid-column-start: 7;
+    grid-column-end: -1;
+    position: absolute;
+    top: 80px;
+    z-index: 2;
+}
+
+.wireframes {
+    font-weight: 500;
+    line-height: 1;
+    font-size: 25px;
+}
+
+.wave {
+    width: 100px;
+    height: auto;
+    animation: wave .4s 4 alternate, appear .3s 1 ease-in;
+    animation-fill-mode: backwards;
+    animation-timing-function: ease-out;
+    transform-origin: bottom right;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+        scale: 0;
+    }
+    100% {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+@keyframes wave {
+    0% {
+        rotate: 0deg;
+    }
+
+    20% {
+        rotate: 0deg;
+    }
+
+    100% {
+        rotate: 20deg;
+    }
+}
+
+@keyframes move {
+0% {
+offset-distance: 0%;
+}
+100% {
+offset-distance: 100%;
+}
+}
+
+.figma-multiplayer {
+    offset-rotate: 0deg;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 120px;
+    height: auto;
+    offset-path: path("M1.5 371C8.83333 301.5 60.8 162.5 210 162.5C396.5 162.5 418.5 945.001 705.5 658.001C992.5 371.001 1181 527 1181 182.5C1181 -162 601.5 68 444 182.5C312.967 277.759 855 764.001 444 764.001C115.2 764.001 12 502 1.5 371Z");
+    animation: move 20000ms infinite linear;
+}
+
+video {
+    display: block;
+width: 100%;
+scale: .97;
+-webkit-clip-path: url(#my-clip-path);
+clip-path: url(#my-clip-path);
+background-color: black;
+}
+.sketchy-video {
+width: 600px;
+background-image: url(rougherbox.svg);
+background-size: contain;
+place-content: center;
+background-repeat: no-repeat;
+}
+
+.svg {
+position: absolute;
+width: 0;
+height: 0;
+}
+
+.video-section {
+height: 100vh;
+margin: auto;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: 1fr max-content max-content 1fr;
+}
+
+.videoandcontrols {
+grid-row-start: 2;
+grid-column-start: 2;
+}
+
+.play {
+background-color: transparent;
+border: none;
+}
+
+.play-icon {
+width: 32px;
+margin-top: 8px;
+height: auto;
+}
+
+.screwed-up {
+grid-row-start: 3;
+grid-column-start: 3;
+filter: drop-shadow(4px 4px 7px rgba(0,0,0,.37));
+}
+
+
+html {
+    --purple: #5651FF;
+    --dark-purple: #4B46D9;
+    --off-black: rgb(40, 40, 40);
+    --off-white: rgb(250, 250, 250);
+}
+
+a {
+    color: var(--purple);
+    text-decoration-color: #5651FF52;
+    text-underline-offset: 3px;
+    transition: text-decoration-color 350ms;
+}
+
+a:hover {
+    text-decoration-color: var(--purple);
+    transition: text-decoration-color 300ms;
+}
+
+@media (min-width: 650px) {
+    .multi-col-two-col {
+        column-count: 2;
+        column-gap: 40px;
+        width: fit-content;
+        margin-inline: auto;
+        gap: 90px;
+        margin-top: 80px;
+    }
+}
