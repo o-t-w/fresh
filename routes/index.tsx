@@ -1,6 +1,5 @@
 import { Head } from "$fresh/runtime.ts";
 import articles from './articles.json' assert {type: "json"};
-import Wireframe from "../islands/Wireframe.jsx";
 export default function Home() {
   return (
     <>
@@ -23,10 +22,6 @@ export default function Home() {
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Redacted+Script:wght@300;400;700&display=swap" rel="stylesheet"/>
-
-{/* <link rel="preconnect" href="https://fonts.googleapis.com"/>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link href="https://fonts.googleapis.com/css2?family=Nabla&display=swap" rel="stylesheet"/> */}
 
       </Head>
     <div class="vh opening figjam">
