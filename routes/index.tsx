@@ -36,9 +36,9 @@ export default function Home() {
     </div>
 
 <div class="comic-sans">
-    <h2>TALK ABOUT USER FLOWS AND DESIGN PROCESS</h2>
+    {/* <h2>TALK ABOUT USER FLOWS AND DESIGN PROCESS</h2>
     <p>TALK ABOUT HOW EVERY DESIGN STARTS WITH A GOOGLE DOC</p>
-    <p>On a highly technical product, design is always a collaborative process. Every design starts as a shareable text document.</p>
+    <p>On a highly technical product, design is always a collaborative process. Every design starts as a shareable text document.</p> */}
    <img src="userflow.png" alt=""/>
    <div class="postit"></div>
 </div>
@@ -46,7 +46,7 @@ export default function Home() {
 <div style="max-width: 1400px; margin-inline: auto; padding-inline: 24px;">
   <div class="wireframes" style="max-width: 700px;">
   <h2 class="hand-written" style="font-weight: normal; font-size: 28px; margin-bottom: 12px;">Wireframes</h2>
-    <p class="redacted"><img style={{float: "left; width: 160px; margin-right: 32px; margin-bottom: 2px; margin-top: 12px"}} class="push-down" src="placeholder.svg" alt=""/>At giffgaff and Gradle I've been responsible for building and maintaining design systems in Figma. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic vel consectetur, corporis ad molestias quis culpa explicabo ipsa modi ipsam labore? Molestiae dignissimos at consectetur iure, repellat asperiores obcaecati sequi. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque delectus saepe nemo aliquam enim soluta debitis modi odio cupiditate iusto?</p>
+    <p class="redacted"><img style={{float: "left; width: 160px; margin-right: 32px; margin-bottom: 2px; margin-top: 12px"}} class="push-down" src="placeholder.svg" alt=""/></p>
     </div>
 </div>
 
@@ -68,7 +68,6 @@ export default function Home() {
     <img src="colorswatch.svg" alt=""/>
   </div>
 </div>
-
     </>
   );
 }
