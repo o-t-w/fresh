@@ -23,6 +23,38 @@ export default function Home() {
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Redacted+Script:wght@300;400;700&display=swap" rel="stylesheet"/>
 
+<style>
+@font-face {
+    font-family: 'Nabla';
+    src: url('Nabla-Variable.ttf') format("truetype-variations");
+  }
+
+.nabla {
+    font-family: 'Nabla';
+    font-size: 70px;
+    font-palette: --Purple;
+    font-variation-settings: "EDPT" 0;
+    animation: fadeIn .5s forwards ease-in-out, font3d 1s forwards cubic-bezier(0, 0, 0.98, 1.3) .4s;
+    /* animation: font3d 1s forwards cubic-bezier(0, 0, 0.98, 1.3); */
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0; scale: .98; filter: blur(1px);}
+    100% {opacity: 1; scale: 1; filter: blur(0px);}
+}
+
+@keyframes font3d {
+    0% {
+        font-variation-settings: "EDPT" 0, "EHLT" 12;
+    }
+    50% {
+        font-variation-settings: "EDPT" 200, "EHLT" 24;;
+    }
+    100% {
+        font-variation-settings: "EDPT" 100, "EHLT" 12;
+    }
+}
+</style>
       </Head>
     <div class="vh opening figjam">
         <h1 style="z-index: 2;" class="nabla">Ollie williams</h1>
