@@ -28,6 +28,14 @@ export default function Home() {
         <h1 style="z-index: 2;" class="nabla">Ollie williams</h1>
     </div>
 
+    <p>I've made small open source contributions to:
+      <ul>
+        <li>the codebase of Tailwind CSS</li>
+        <li>the codebase of DoodleCSS</li>
+        <li>data contributions to caniuse.com and caniemail.com</li>
+        <li>contributed text to the official React documentation</li>
+      </ul>
+      </p>
 
     <div className="vh">
     <ul class="multi-col-two-col">
